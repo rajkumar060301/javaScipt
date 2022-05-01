@@ -7,38 +7,112 @@
 </head>
 <body>
 <h3>welcome page</h3>
-<input id="hi" name="hello" onclick="sayHello()" type="button" value="say hello">
-<script type="text/javascript">
+<div class="div" style="height: 200px; width:500px; border: 2px solid black">
+    <script type="text/javascript">
+        document.write("using assignment operatior")
+        var a = 10;
+        var b = 20;
+        var linebreak = "<br />";
+        document.write(linebreak)
+        document.write("(a == b) => ");
+        result = (a == b);
+        document.write(result);
+        document.write(linebreak);
+        document.write("(a < b) => ");
+        result = (a < b);
+        document.write(result);
+        document.write(linebreak);
+        document.write("(a > b) => ");
+        result = (a > b);
+        document.write(result);
+        document.write(linebreak);
+        document.write("(a != b) => ");
+        result = (a != b);
+        document.write(result);
+        document.write(linebreak);
+        document.write("(a >= b) => ");
+        result = (a >= b);
+        document.write(result);
+        document.write(linebreak);
+        document.write("(a <= b) => ");
+        result = (a <= b);
+        document.write(result);
+        document.write(linebreak);
+        // result here is keyword
+    </script>
+</div>
+<div class="div" style="height: 200px; width:500px; border: 2px solid black">
+    <script type="text/javascript">
+        document.write("using if else" + "<br>");
+        var age = 15;
+        if (age > 18) {
+            document.write("<b>Qualifies for driving</b>");
+        } else {
+            document.write("<b>Does not qualify for driving</b>");
+        }
+    </script>
+</div>
+<div class="div" style="height: 200px; width:500px; border: 2px solid black">
+    <script type="text/javascript">
+        document.write("using switch case" + "<br>")
+        var grade = 'A';
+        document.write("Entering switch block<br />");
+        switch (grade) {
+            case 'A':
+                document.write("Good job<br />");
+                Javascript
+                45
+                break;
+            case 'B':
+                document.write("Pretty good<br />");
+                break;
+            case 'C':
+                document.write("Passed<br />");
+                break;
+            case 'D':
+                document.write("Not so good<br />");
+                break;
+            case 'F':
+                document.write("Failed<br />");
+                break;
+            default:
+                document.write("Unknown grade<br />")
+        }
+        document.write("Exiting switch block");
+    </script>
+</div>
+<div class="div" style="height: 200px; width:500px; border: 2px solid black">
+    <input id="input" onclick="problem()" type="button" value="click">
 
-    var a = 10;
-    var b = 20;
-    var linebreak = "<br />";
-    document.write(linebreak)
-    document.write("(a == b) => ");
-    result = (a == b);
-    document.write(result);
-    document.write(linebreak);
-    document.write("(a < b) => ");
-    result = (a < b);
-    document.write(result);
-    document.write(linebreak);
-    document.write("(a > b) => ");
-    result = (a > b);
-    document.write(result);
-    document.write(linebreak);
-    document.write("(a != b) => ");
-    result = (a != b);
-    document.write(result);
-    document.write(linebreak);
-    document.write("(a >= b) => ");
-    result = (a >= b);
-    document.write(result);
-    document.write(linebreak);
-    document.write("(a <= b) => ");
-    result = (a <= b);
-    document.write(result);
-    document.write(linebreak);
-</script>
+</div>
+<div class="div" style="height: 200px; width:500px; border: 2px solid black">
+    <p>Bring your mouse inside the division to see the result:</p>
+    <div onmouseout="out()" onmouseover="over()">
+        <h2> This is inside the division </h2>
+    </div>
+</div>
+
+<div class="div" style="height: 200px; width:500px; border: 2px solid black">
+
+    <script type="text/javascript">
+        document.write("using  typeof operator" + "<br />")
+        var a = 10;
+        var b = "String";
+        var linebreak = "<br />";
+        result = (typeof b == "string" ? "B is String" : "B is Numeric");
+        document.write("Result => " + result);
+        // document.write();
+        document.write(linebreak);
+        result = (typeof a == "string" ? "A is String" : "A is Numeric");
+        document.write("Result => ");
+        document.write(result);
+        document.write(linebreak);
+
+    </script>
+</div>
+
+<input id="hi" name="hello" onclick="sayHello()" type="button" value="say hello">
+
 
 </body>
 </html>
